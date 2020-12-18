@@ -61,7 +61,7 @@ footer {
 
 /* Media Queries */
 @media(max-width:700px){
-    .list-Filtre h4 span{
+    .list-Filtre{
         display: none;
     }
 }
