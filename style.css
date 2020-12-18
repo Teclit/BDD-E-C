@@ -60,8 +60,8 @@ footer {
 
 
 /* Media Queries */
-@media(min-width:700px){
-    .list-Filtre {
+@media(max-width:700px){
+    .list-Filtre h4 span{
         display: none;
     }
 }
