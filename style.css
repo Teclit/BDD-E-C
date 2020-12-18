@@ -57,3 +57,11 @@ footer {
     background:#004c99;
     color: #ffff;
 }
+
+
+/* Media Queries */
+@media(min-width:700px){
+    .list-Filtre {
+        display: none;
+    }
+}
