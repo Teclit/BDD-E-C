@@ -58,9 +58,9 @@ img {
     height:450px;
 }
 
-.slide{
+.carousel-inner{
     height: 400px;
-    margin-bottom: 5rem;
+    margin-bottom: 1rem;
 }
 
 /* Footer  */
@@ -84,8 +84,13 @@ footer li a:hover{
 
 /* Media Queries */
 @media(max-width:700px){
-    .slide{
+    .carousel-inner{
         height: 250px;
+        width: 100%;
+        border: 1px solid black;
+    }
+    .list-Filtre{
+        display: none;
     }
     
 }
@@ -95,7 +100,11 @@ footer li a:hover{
     .list-Filtre{
         display: none;
     }
-    .slide{
-        height: 150px;
+    img{
+        height: 8px;
+    }
+    .carousel-inner{
+        height: 300px;
+        width: 100%;
     }
 }
