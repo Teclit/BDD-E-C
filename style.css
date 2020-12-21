@@ -68,6 +68,9 @@ footer {
     background:#004c99;
     color: #ffff;
     font-size: 1.2rem;
+    
+    bottom: 0;
+    
 }
 footer ul{
     list-style: none;
