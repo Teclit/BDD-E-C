@@ -24,25 +24,110 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                            <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Théme</a>
+                            <a class="nav-link" href="theme.html">Théme</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link me-5" href="#">A Propos</a>
+                            <a class="nav-link me-5" href="apropos.html">A Propos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#"><i class="fas fa-cart-arrow-down fa-lg"></i> 1 </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Identifier</a>
+                            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#identifier" href="#">Identifier</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <!-- section grid photo -->
+        <!-- MODAL start -->
+            <div class="modal fade" id="identifier" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header ">
+                    <h3 class="modal-title" id="exampleModalLabel">Se connecter:</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                    <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label">Email:</label>
+                        <input type="text" class="form-control" id="recipient-name">
+                        <label for="recipient-name" class="col-form-label">Mot de Passe:</label>
+                        <input type="text" class="form-control" id="recipient-name">
+                    </div>
+                    <p class="text-primary" data-bs-toggle="modal" data-bs-target="#oublierMps" data-bs-dismiss="modal"><a>Mot-de-passe, oublier?</a></p>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary " data-bs-toggle="modal" data-bs-target="#creerCompte"  data-bs-dismiss="modal">creer un compte</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                    <button type="button" class="btn btn-primary">se connecter</button>
+                </div>
+                </div>
+            </div>
+            </div>
+        <!-- MODAL start end -->
+        <!-- MOdal creer un compte Start -->
+        <div class="modal fade" id="creerCompte" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="exampleModalLabel">Creér un Comte</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                    <div class="mb-3">
+                        <label for="nom" class="col-form-label">Nom:</label>
+                        <input type="text" class="form-control" id="nom">
+                        <label for="prenom" class="col-form-label">Prénom:</label>
+                        <input type="text" class="form-control" id="prenom">
+                        <label for="email" class="col-form-label">Email:</label>
+                        <input type="text" class="form-control" id="email">
+                        <label for="password" class="col-form-label">Mot-de-Passe:</label>
+                        <input type="text" class="form-control" id="password">
+                        <label for="confrimPassword" class="col-form-label">Confirmer Mot-de-Passe:</label>
+                        <input type="text" class="form-control" id="confrimPassword">
+                    </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                    <button type="button" class="btn btn-primary">Régistrer</button>
+                </div>
+                </div>
+            </div>
+        </div>            
+        <!-- MOdal creer un compte End-->
+        <!-- modal mot de passe oublier start -->
+            <div class="modal fade" id="oublierMps" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                    <div class="modal-header ">
+                        <h3 class="modal-title" id="exampleModalLabel">Entrez votre email:</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Vous allez recevoir un lien danm votre email pour modifieer votre msp</p>
+                        <form>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Email:</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                        <button type="button" class="btn btn-primary">Valider</button>
+                    </div>
+                    </div>
+                </div>
+                </div>
+        <!-- modal mot de passe oublier start -->
+        <!-- section grid filtre -->
         <section class="container-fluid tbg-dark py-3 mb-3">
             <div class="container overflow-hidden">
                 <div class="row">
@@ -96,7 +181,7 @@
                             <h5>Théme: Comique</h5>
                             <h5>9.99€</h5>
                             <div class="justify-content-between text-center">
-                                <a href="#" class="btn btn-block btn-lg">Voir</a>
+                                <a href="#" class="btn btn-block btn-lg"> Voir  </a>
                                 <a href="#" class="btn btn-block btn-lg">Ajouter</a>
                             </div>
                         </div>
@@ -111,7 +196,7 @@
                             <h5>Théme: Comique</h5>
                             <h5>9.99€</h5>
                             <div class="justify-content-between text-center">
-                                <a href="#" class="btn btn-block btn-lg">Voir</a>
+                                <a href="#" class="btn btn-block btn-lg"> Voir  </a>
                                 <a href="#" class="btn btn-block btn-lg">Ajouter</a>
                             </div>
                         </div>
@@ -126,7 +211,7 @@
                             <h5>Théme: Comique</h5>
                             <h5>9.99€</h5>
                             <div class="justify-content-between text-center">
-                                <a href="#" class="btn btn-block btn-lg">Voir</a>
+                                <a href="#" class="btn btn-block btn-lg"> Voir  </a>
                                 <a href="#" class="btn btn-block btn-lg">Ajouter</a>
                             </div>
                         </div>
@@ -141,7 +226,7 @@
                             <h5>Théme: Comique</h5>
                             <h5>9.99€</h5>
                             <div class="justify-content-between text-center">
-                                <a href="#" class="btn btn-block btn-lg">Voir</a>
+                                <a href="#" class="btn btn-block btn-lg"> Voir  </a>
                                 <a href="#" class="btn btn-block btn-lg">Ajouter</a>
                             </div>
                         </div>
@@ -156,7 +241,7 @@
                             <h5>Théme: Comique</h5>
                             <h5>9.99€</h5>
                             <div class="justify-content-between text-center">
-                                <a href="#" class="btn btn-block btn-lg">Voir</a>
+                                <a href="#" class="btn btn-block btn-lg"> Voir  </a>
                                 <a href="#" class="btn btn-block btn-lg">Ajouter</a>
                             </div>
                         </div>
@@ -171,7 +256,7 @@
                             <h5>Théme: Comique</h5>
                             <h5>9.99€</h5>
                             <div class="justify-content-between text-center">
-                                <a href="#" class="btn btn-block btn-lg">Voir</a>
+                                <a href="#" class="btn btn-block btn-lg"> Voir  </a>
                                 <a href="#" class="btn btn-block btn-lg">Ajouter</a>
                             </div>
                         </div>
@@ -186,7 +271,7 @@
                             <h5>Théme: Comique</h5>
                             <h5>9.99€</h5>
                             <div class="justify-content-between text-center">
-                                <a href="#" class="btn btn-block btn-lg">Voir</a>
+                                <a href="#" class="btn btn-block btn-lg"> Voir  </a>
                                 <a href="#" class="btn btn-block btn-lg">Ajouter</a>
                             </div>
                         </div>
@@ -201,7 +286,7 @@
                             <h5>Théme: Comique</h5>
                             <h5>9.99€</h5>
                             <div class="justify-content-between text-center">
-                                <a href="#" class="btn btn-block btn-lg">Voir</a>
+                                <a href="#" class="btn btn-block btn-lg"> Voir  </a>
                                 <a href="#" class="btn btn-block btn-lg">Ajouter</a>
                             </div>
                         </div>
@@ -216,7 +301,7 @@
                             <h5>Théme: Comique</h5>
                             <h5>9.99€</h5>
                             <div class="justify-content-between text-center">
-                                <a href="#" class="btn btn-block btn-lg">Voir</a>
+                                <a href="#" class="btn btn-block btn-lg"> Voir  </a>
                                 <a href="#" class="btn btn-block btn-lg">Ajouter</a>
                             </div>
                         </div>
@@ -231,7 +316,7 @@
                             <h5>Théme: Comique</h5>
                             <h5>9.99€</h5>
                             <div class="justify-content-between text-center">
-                                <a href="#" class="btn btn-block btn-lg">Voir</a>
+                                <a href="#" class="btn btn-block btn-lg"> Voir  </a>
                                 <a href="#" class="btn btn-block btn-lg">Ajouter</a>
                             </div>
                         </div>
@@ -246,7 +331,7 @@
                             <h5>Théme: Comique</h5>
                             <h5>9.99€</h5>
                             <div class="justify-content-between text-center">
-                                <a href="#" class="btn btn-block btn-lg">Voir</a>
+                                <a href="#" class="btn btn-block btn-lg"> Voir  </a>
                                 <a href="#" class="btn btn-block btn-lg">Ajouter</a>
                             </div>
                         </div>
@@ -260,7 +345,7 @@
                             <h5>Théme: Comique</h5>
                             <h5>9.99€</h5>
                             <div class="justify-content-between text-center">
-                                <a href="#" class="btn btn-block btn-lg">Voir</a>
+                                <a href="#" class="btn btn-block btn-lg"> Voir  </a>
                                 <a href="#" class="btn btn-block btn-lg">Ajouter</a>
                             </div>
                         </div>
@@ -275,7 +360,7 @@
                             <h5>Théme: Comique</h5>
                             <h5>9.99€</h5>
                             <div class="justify-content-between text-center">
-                                <a href="#" class="btn btn-block btn-lg">Voir</a>
+                                <a href="#" class="btn btn-block btn-lg"> Voir  </a>
                                 <a href="#" class="btn btn-block btn-lg">Ajouter</a>
                             </div>
                         </div>
@@ -290,7 +375,7 @@
                             <h5>Théme: Comique</h5>
                             <h5>9.99€</h5>
                             <div class="justify-content-between text-center">
-                                <a href="#" class="btn btn-block btn-lg">Voir</a>
+                                <a href="#" class="btn btn-block btn-lg"> Voir  </a>
                                 <a href="#" class="btn btn-block btn-lg">Ajouter</a>
                             </div>
                         </div>
@@ -305,7 +390,7 @@
                             <h5>Théme: Comique</h5>
                             <h5>9.99€</h5>
                             <div class="justify-content-between text-center">
-                                <a href="#" class="btn btn-block btn-lg">Voir</a>
+                                <a href="#" class="btn btn-block btn-lg"> Voir  </a>
                                 <a href="#" class="btn btn-block btn-lg">Ajouter</a>
                             </div>
                         </div>
@@ -314,26 +399,25 @@
             </div>
             <div class="row  justify-content-center py-5 mb-3">
                     <a href="#" class=" col-6 btn btn-lg btn-block">
-                        En Savoir Plus +
+                        En Sa voir   Plus +
                     </a>
             </div>
         </div>
         <!-- Slider image End -->
         <footer class="container-fluid">
             <div class="container">
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3  gy-5">
+                <div class="row row-cols-3 row-cols-sm-3  gy-2 pt-3">
                     <div class="col text-center">
                         <ul>
-                            <li><a href="#">Accueil</a></li>
-                            <li><a href="#">Théme</a></li>
-                            <li><a href="#">A Propos</a></li>
+                            <li><a href="index.html">Accueil</a></li>
+                            <li><a href="theme.html">Théme</a></li>
+                            <li><a href="apropos.html">A Propos</a></li>
                         </ul>
                     </div>
                     <div class="col text-center">
                         <h3>BDDRIVE||</h3>
                     </div>
                     <div class="col text-center">
-                        <h5>Contact: </h5>
                         <ul>
                             <li>020202</li>
                             <li>aaaa@aaa.fr</li>
