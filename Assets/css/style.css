@@ -1,0 +1,119 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+
+body {
+    background: #f5f5f5;
+    font-family: 'Noto Sans JP', sans-serif;
+    cursor: pointer;
+}
+
+.containerList {
+    height: 800px;
+    overflow-y:scroll;
+}
+
+
+
+.tbg-light {
+    background:#66b2ff;
+}
+.tbg-dark{
+    background-color: #001933;
+}
+
+form .filtreListe {
+    display: none;
+}
+
+.btn{
+    
+    color: #ffffff;
+    border-radius: 1rem;
+}
+
+.btn-lg{
+    background:#66b2ff;
+}
+
+.container .btn {
+    padding: 3px;
+}
+
+
+
+.btn:hover{
+    background:#001933;
+    color: #ffffff;
+    transform: scale(0.90);
+    font-weight: bold;  
+    border: #ffffff 1px solid; 
+}
+
+
+.navbar-brand,
+footer h3{
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: bolder;
+}
+.navbar-nav a
+.nav-item span {
+    font-size: 1.5rem;
+}
+
+img {
+    width: 100%;
+    height:450px;
+}
+
+.carousel-inner{
+    height: 500px;
+    margin-bottom: 1rem;
+}
+
+/* Footer  */
+footer {
+    background:#004c99;
+    color: #ffff;
+    font-size: 1.2rem;
+}
+footer ul{
+    list-style: none;
+}
+footer li a{
+    color: #ffff;
+    text-decoration: none;
+}
+footer li a:hover{
+    color: #ffff;
+    border-bottom: 1px #ffffff solid;
+}
+
+
+/* Media Queries */
+@media(max-width:700px){
+    .carousel-inner{
+        height: 250px;
+        width: 100%;
+        border: 1px solid black;
+    }
+    .list-Filtre{
+        display: none;
+    }
+    
+}
+
+
+@media(max-width: 500) {
+    .list-Filtre{
+        display: none;
+    }
+    img{
+        height: 8px;
+    }
+    .carousel-inner{
+        height: 300px;
+        width: 100%;
+    }
+}
