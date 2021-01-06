@@ -78,6 +78,7 @@ img {
 #voir{
     display: none;
     height: 500px;
+    overflow-y: scroll;
 }
 
 /* Footer  */
@@ -130,5 +131,9 @@ footer li a:hover{
     .carousel-inner{
         height: 300px;
         width: 100%;
+    }
+
+    footer{
+        display: none;
     }
 }
